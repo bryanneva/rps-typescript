@@ -1,0 +1,23 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "main": "./bin/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf ./bin",
+    "build": "yarn tsc",
+    "postbuild": "cp public/** bin",
+    "test": "jest",
+    "serve": "http-server ./bin -p 3000"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.24.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@types/jest": "^26.0.14",
+    "http-server": "^0.12.3",
+    "jest": "^26.4.2",
+    "requirejs": "^2.3.6",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}

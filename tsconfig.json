@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outFile": "bin/bundle.js",
+    "module": "System",
+    "moduleResolution": "Node",
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./src/**/*test*"
+  ]
+}
